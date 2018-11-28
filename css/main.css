@@ -31,6 +31,15 @@ body {
     box-shadow: 0px -5px 5px gray;
 }
 
+.page-footer button {
+    border-radius: 0;
+}
+
+.page-footer button:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
 .footer-content {
     padding-bottom: 1.5rem;
 }

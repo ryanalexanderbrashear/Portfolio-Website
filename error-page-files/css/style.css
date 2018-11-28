@@ -136,7 +136,7 @@ body {
   font-weight: 700;
   margin: 0px;
   color: #fff;
-  text-shadow: 4px 4px 0px #002fff;
+  /* text-shadow: 4px 4px 0px #002fff; */
 }
 
 .notfound h2 {
@@ -158,23 +158,21 @@ body {
 }
 
 .notfound a {
+  border: 2px solid #e0e0e0;
   font-family: 'Cairo', sans-serif;
   padding: 10px 30px;
   display: inline-block;
   color: #fff;
   font-weight: 400;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0px 0px 0px 2px #fff, 2px 2px 0px 2px #002fff;
-          box-shadow: 0px 0px 0px 2px #fff, 2px 2px 0px 2px #002fff;
+  text-transform: uppercase; 
   text-decoration: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
 .notfound a:hover {
-  background-color: #002fff;
-  -webkit-box-shadow: 0px 0px 0px 0px #fff, 0px 0px 0px 2px #002fff;
-          box-shadow: 0px 0px 0px 0px #fff, 0px 0px 0px 2px #002fff;
+  background-color: #fff;
+  color: #000;
 }
 
 .notfound-social {
@@ -182,17 +180,16 @@ body {
 }
 
 .notfound-social>a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   padding: 0px;
   margin: 0px 5px;
 }
 
 .notfound-social>a:hover {
-  background-color: #002fff;
-  -webkit-box-shadow: 0px 0px 0px 0px #fff, 0px 0px 0px 2px #002fff;
-          box-shadow: 0px 0px 0px 0px #fff, 0px 0px 0px 2px #002fff;
+  color: #000;
 }
 
 @media only screen and (max-width: 480px) {
