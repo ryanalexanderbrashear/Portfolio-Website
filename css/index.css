@@ -1,6 +1,10 @@
+/* Section Styles */
+
 section {
     padding: 100px 0;
 }
+
+/* Timeline Styles */
 
 .timeline {
     position: relative;
@@ -68,7 +72,7 @@ section {
     color: white;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: #fed136;
+    background-color: #fff;
 }
 
 .timeline>li .timeline-image h4 {
