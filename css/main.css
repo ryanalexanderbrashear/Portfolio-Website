@@ -1,10 +1,12 @@
 /* HTML Styles */
+
 html {
     overflow: hidden;
     height: 100%;
 }
 
 /* Body Styles */
+
 body {
     font-family: 'Cairo', sans-serif;
     height: 100%;
