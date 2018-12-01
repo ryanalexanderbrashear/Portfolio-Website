@@ -226,8 +226,12 @@ section {
     border-top: 1px solid black;
 }
 
-/* Skill Icons */
+/* Skill List Styles */
 
 .skill-icons {
     font-size: 4rem;
+}
+
+.workflow-skills {
+    margin-left: 0px;
 }
