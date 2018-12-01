@@ -11,6 +11,13 @@ body {
     font-family: 'Cairo', sans-serif;
     height: 100%;
     overflow: auto;
+    background-color: whitesmoke;
+}
+
+/* Section Divider Styles */
+
+.section-divider {
+    border-top: 1px solid black;
 }
 
 /* Navbar Styles */
