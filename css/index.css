@@ -289,6 +289,10 @@ section {
     font-size: 4rem;
 }
 
+.skill-icons li:hover {
+    transform: scale(1.2);
+}
+
 .workflow-skills {
     margin-left: 0px;
 }
