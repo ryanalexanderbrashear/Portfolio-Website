@@ -77,8 +77,58 @@
     </nav>
     <!-- End Navbar -->
 
-
-
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+        <div class="container">
+            <!-- Featured Project Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7">
+                    <a href="https://www.interaptskills.com"><img class="featured-image img-fluid mb-3 mb-lg-0" src="../img/skills-students.jpg" alt=""></a>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4 class="text-uppercase">Interapt Skills</h4>
+                        <p class="text-black-50 mb-0">I've spent more than a year involved with this program, working to both create and teach the iOS curriculum. There's no project I've been prouder to be a part of, and no project I'd rather showcase.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="../img/togglit-logo.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white text-uppercase">Togglit</h4>
+                                <p class="mb-0 text-white-50">Working as the lead iOS developer for Togglit helped me grow immensely as a developer. I learned how to quickly familiarize myself with an unknown codebase, how to manipulate data using a CMS and Firebase, and even more about how to effectively work in an Agile development team with several different groups.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="../img/hug-logo.png" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white text-uppercase">HUG Reading</h4>
+                                <p class="mb-0 text-white-50">HUG was the first major project I worked on as an iOS developer post-internship. I learned a lot about Agile development, working in a team of developers, and gained many valuable iOS development skills working on this project.</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Project Section -->
 
     <!-- Footer -->
     <footer class="page-footer font-small elegant-color-dark pt-4">
@@ -168,7 +218,9 @@
     <script>
         //Script function to activate all tooltips on the page when the screen loads
         $(function () {
-            $('[data-toggle="tooltip"]').tooltip({ trigger: 'hover' })
+            $('[data-toggle="tooltip"]').tooltip({
+                trigger: 'hover'
+            })
         })
     </script>
 </body>
