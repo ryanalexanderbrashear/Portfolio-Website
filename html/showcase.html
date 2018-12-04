@@ -26,9 +26,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/showcase.css" />
 
-    <!-- Custom JS -->
-    <script src="../scripts/main.js"></script>
-
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
@@ -83,12 +80,15 @@
             <!-- Featured Project Row -->
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                 <div class="col-xl-8 col-lg-7">
-                    <a href="https://www.interaptskills.com"><img class="featured-image img-fluid mb-3 mb-lg-0" src="../img/skills-students.jpg" alt=""></a>
+                    <a href="https://www.interaptskills.com"><img class="featured-image img-fluid mb-3 mb-lg-0" src="../img/skills-students.jpg"
+                            alt=""></a>
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
                         <h4 class="text-uppercase">Interapt Skills</h4>
-                        <p class="text-black-50 mb-0">I've spent more than a year involved with this program, working to both create and teach the iOS curriculum. There's no project I've been prouder to be a part of, and no project I'd rather showcase.</p>
+                        <p class="text-black-50 mb-0">I've spent more than a year involved with this program, working
+                            to both create and teach the iOS curriculum. There's no project I've been prouder to be a
+                            part of, and no project I'd rather showcase.</p>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,11 @@
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white text-uppercase">Togglit</h4>
-                                <p class="mb-0 text-white-50">Working as the lead iOS developer for Togglit helped me grow immensely as a developer. I learned how to quickly familiarize myself with an unknown codebase, how to manipulate data using a CMS and Firebase, and even more about how to effectively work in an Agile development team with several different groups.</p>
+                                <p class="mb-0 text-white-50">Working as the lead iOS developer for Togglit helped me
+                                    grow immensely as a developer. I learned how to quickly familiarize myself with an
+                                    unknown codebase, how to manipulate data using a CMS and Firebase, and even more
+                                    about how to effectively work in an Agile development team with several different
+                                    groups.</p>
                                 <hr class="d-none d-lg-block mb-0 ml-0">
                             </div>
                         </div>
@@ -119,7 +123,10 @@
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="text-white text-uppercase">HUG Reading</h4>
-                                <p class="mb-0 text-white-50">HUG was the first major project I worked on as an iOS developer post-internship. I learned a lot about Agile development, working in a team of developers, and gained many valuable iOS development skills working on this project.</p>
+                                <p class="mb-0 text-white-50">HUG was the first major project I worked on as an iOS
+                                    developer post-internship. I learned a lot about Agile development, working in a
+                                    team of developers, and gained many valuable iOS development skills working on this
+                                    project.</p>
                                 <hr class="d-none d-lg-block mb-0 mr-0">
                             </div>
                         </div>
@@ -179,25 +186,27 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal col-sm-12">
-                        <div class="form-group"><label>Name</label><input class="form-control required" data-placement="top"
-                                data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters."
-                                type="text"></div>
+                    <form name="contact-form" class="form-horizontal col-sm-12" action="https://formspree.io/alexbrashear@gmail.com"
+                        method="POST" onsubmit="return validateForm()">
+                        <div class="form-group"><label>Name</label><input id="modal-name" class="form-control required"
+                                data-placement="top" data-trigger="manual" data-content="Please enter your name." type="text"
+                                name="name"></div>
                         <div class="form-group"><label>Message</label><textarea class="form-control" data-placement="top"
-                                data-trigger="manual"></textarea></div>
-                        <div class="form-group"><label>E-Mail</label><input class="form-control email" data-placement="top"
-                                data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)"
-                                type="text"></div>
-                        <div class="form-group"><label>Phone</label><input class="form-control phone" data-placement="top"
-                                data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
+                                data-trigger="manual" name="message"></textarea></div>
+                        <div class="form-group"><label>E-Mail</label><input id="modal-email" class="form-control email"
+                                data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address."
+                                type="text" name="email"></div>
+                        <div class="form-group"><label>Phone</label><input id="modal-phone" class="form-control phone"
+                                data-placement="top" data-trigger="manual" data-content="Must be a valid phone number."
+                                type="text" name="phone"></div>
                         <div class="form-group">
                             <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not
                                 valid. </p>
                         </div>
+                        <div class="modal-footer">
+                            <input class="btn btn-dark" aria-hidden="true" type="submit">
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-dark" data-dismiss="modal" aria-hidden="true">Submit</button>
                 </div>
             </div>
         </div>
@@ -214,6 +223,9 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/js/mdb.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../scripts/main.js"></script>
 
     <script>
         //Script function to activate all tooltips on the page when the screen loads
